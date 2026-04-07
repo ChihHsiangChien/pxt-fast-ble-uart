@@ -120,7 +120,7 @@ namespace fastble {
         }
     }
 
-    //%
+    //% shim=fastble::startCaptureNative
     void startCapture() {
         if (capturing) return;
 
