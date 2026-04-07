@@ -1,27 +1,36 @@
 {
     "name": "pxt-fast-ble-uart",
-    "version": "0.0.0",
-    "description": "",
+    "version": "0.0.1",
+    "description": "High-speed 1000Hz BLE UART Service for micro:bit V2",
     "dependencies": {
         "core": "*",
-        "radio": "*",
+        "bluetooth": "*",
         "microphone": "*"
     },
     "files": [
         "README.md",
-        "main.blocks",
-        "main.ts"
+        "main.ts",
+        "shims.d.ts",
+        "FastUARTService.h",
+        "FastUARTService.cpp",
+        "extension.cpp"
     ],
     "testFiles": [
         "test.ts"
     ],
     "public": true,
-    "targetVersions": {
-        "target": "8.0.21",
-        "targetId": "microbit"
-    },
-    "supportedTargets": [
-        "microbit"
-    ],
-    "preferredEditor": "blocksprj"
+    "cpp": true,
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "enabled": 1,
+                    "uart": 1,
+                    "pairing_mode": 1,
+                    "dfu_service": 0,
+                    "event_service": 1
+                }
+            }
+        }
+    }
 }
