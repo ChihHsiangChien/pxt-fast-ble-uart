@@ -10,7 +10,6 @@
     "files": [
         "README.md",
         "main.ts",
-        "shims.d.ts",
         "FastUARTService.h",
         "FastUARTService.cpp",
         "extension.cpp"

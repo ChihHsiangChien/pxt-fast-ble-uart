@@ -12,9 +12,6 @@ namespace fastble {
         startCaptureNative();
     }
 
-    /**
-     * 這是對應 C++ 的原始 shim，不直接暴露給使用者
-     */
     //% shim=fastble::startCaptureNative
     function startCaptureNative(): void {
         // 模擬器 fallback

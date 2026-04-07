@@ -121,7 +121,7 @@ namespace fastble {
     }
 
     //% shim=fastble::startCaptureNative
-    void startCapture() {
+    void startCaptureNative() {
         if (capturing) return;
 
         // 啟動時顯示一次名稱，方便辨識
